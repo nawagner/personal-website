@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nick Wagner — Portfolio</title>
+    <meta name="description" content="Portfolio of Nick (Nicholas) Wagner: projects, experience, and contact." />
+    <meta property="og:title" content="Nick Wagner — Portfolio" />
+    <meta property="og:description" content="Projects, experience, and contact information." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="assets/img/profile.jpg" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">Nick Wagner</a>
+        <nav class="nav">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-text">
+          <h1>Hi, I’m Nick (Nicholas) Wagner</h1>
+          <p class="lede">
+            I build thoughtful, user-centric products across web and cloud. I enjoy solving real problems with clean, scalable code.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/nawagner" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/wagnernicholas" aria-label="LinkedIn">LinkedIn</a>
+            <a href="mailto:nwagner@learningjourneyai.com" aria-label="Email">Email</a>
+            <a href="https://nicholaswagner009.substack.com/" aria-label="Substack">Substack</a>
+            <a href="https://www.learningjourneyai.com/" aria-label="Website">Website</a>
+          </div>
+        </div>
+        <img class="hero-img" src="assets/img/profile.jpg" alt="Portrait of Your Name" />
+      </section>
+
+      <section class="container section">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <a class="link" href="projects.html">See all</a>
+        </div>
+        <div id="featuredProjects" class="card-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <div class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+        // Load featured projects (top 3)
+        loadProjects({ mountId: 'featuredProjects', limit: 3 });
+      });
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicholas (Nick) Wagner",
+        "url": "https://example.com/",
+        "sameAs": [
+          "https://github.com/nawagner",
+          "https://www.linkedin.com/in/wagnernicholas",
+          "https://nicholaswagner009.substack.com/",
+          "https://www.learningjourneyai.com/"
+        ],
+        "jobTitle": "Software Engineer",
+        "email": "mailto:nwagner@learningjourneyai.com"
+      }
+    </script>
+  </body>
+  </html>

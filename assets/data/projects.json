@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Personal Site",
+    "description": "This very website: responsive, accessible, and fast.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "tags": ["frontend", "design"],
+    "repoUrl": "https://github.com/nawagner/personal-website",
+    "liveUrl": "https://example.com/",
+    "image": "assets/img/project-cover-1.jpg"
+  },
+  {
+    "title": "API Service",
+    "description": "A lightweight REST API with auth and rate limiting.",
+    "tech": ["Node.js", "Express", "Postgres"],
+    "tags": ["backend", "api"],
+    "repoUrl": "https://github.com/nawagner/api-service",
+    "liveUrl": "",
+    "image": "assets/img/project-cover-2.jpg"
+  },
+  {
+    "title": "Cloud Cost Dashboard",
+    "description": "Interactive dashboard to visualize cloud spend trends.",
+    "tech": ["TypeScript", "React", "D3"],
+    "tags": ["frontend", "data"],
+    "repoUrl": "https://github.com/nawagner/cloud-cost-dashboard",
+    "liveUrl": "https://dashboard.example.com",
+    "image": "assets/img/project-cover-3.jpg"
+  }
+]

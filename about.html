@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Nick Wagner</title>
+    <meta name="description" content="About Your Name: background, values, and skills." />
+    <meta property="og:title" content="About — Your Name" />
+    <meta property="og:description" content="Background, values, and skills." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">Nick Wagner</a>
+        <nav class="nav">
+          <a href="projects.html">Projects</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
+      </div>
+    </header>
+
+    <main class="container section about">
+      <div class="about-card">
+        <img class="about-img" src="assets/img/profile.jpg" alt="Portrait of Nick Wagner" />
+        <div>
+          <h1>About Me</h1>
+          <p>
+            I’m a software engineer focused on building reliable, accessible products.
+            I enjoy working across the stack, with a strong emphasis on user experience
+            and maintainable systems.
+          </p>
+          <p>
+            Previously, I’ve contributed to projects in web, APIs, and cloud infrastructure.
+            I value clarity, curiosity, and thoughtful collaboration.
+          </p>
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul class="pill-list">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>Go</li>
+              <li>AWS</li>
+              <li>Postgres</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+          <div class="about-cta">
+            <a class="button primary" href="projects.html">View Projects</a>
+            <a class="button" href="mailto:nwagner@learningjourneyai.com">Email Me</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <div class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+  </html>

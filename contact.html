@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Nick Wagner</title>
+    <meta name="description" content="Contact Your Name for collaboration or opportunities." />
+    <meta property="og:title" content="Contact — Your Name" />
+    <meta property="og:description" content="Email and social links." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">Nick Wagner</a>
+        <nav class="nav">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
+      </div>
+    </header>
+
+    <main class="container section contact">
+      <h1>Get in Touch</h1>
+      <p class="lede">I’m always happy to chat about interesting problems and opportunities.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Email</h2>
+          <p><a href="mailto:nwagner@learningjourneyai.com">nwagner@learningjourneyai.com</a></p>
+          <p class="muted">Preferred for most inquiries.</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Social</h2>
+          <ul>
+            <li><a href="https://github.com/nawagner">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/wagnernicholas">LinkedIn</a></li>
+            <li><a href="https://nicholaswagner009.substack.com/">Substack</a></li>
+            <li><a href="https://www.learningjourneyai.com/">Website</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <h2>Contact Form</h2>
+          <form id="contactForm" method="POST" action="#" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send</button>
+            <p class="muted small">To enable this form, set a real endpoint (e.g., Formspree) in the <code>action</code> attribute.</p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <div class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', (e) => {
+          if (form.action === '#') {
+            e.preventDefault();
+            alert('Set a real form endpoint in contact.html to enable submissions.');
+          }
+        });
+      });
+    </script>
+  </body>
+  </html>

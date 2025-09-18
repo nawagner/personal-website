@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Your Name</title>
+    <meta name="description" content="Projects by Your Name: case studies, code, and live demos." />
+    <meta property="og:title" content="Projects — Your Name" />
+    <meta property="og:description" content="Case studies, repositories, and live demos." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/projects.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./">Nick Wagner</a>
+        <nav class="nav">
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1>Projects</h1>
+      <p class="lede">A selection of things I’ve designed and built.</p>
+
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search projects..." aria-label="Search projects" />
+        <div id="tagFilters" class="tag-filters" role="group" aria-label="Filter by tag"></div>
+      </div>
+
+      <div id="projectsGrid" class="card-grid"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Your Name</span>
+        <div class="footer-links">
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const year = document.getElementById('year');
+        if (year) year.textContent = new Date().getFullYear();
+        initProjectsPage();
+      });
+    </script>
+  </body>
+  </html>
