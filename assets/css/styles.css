@@ -89,7 +89,7 @@ a:hover { text-decoration: underline; }
 .about .about-cta { margin-top: 18px; display: flex; gap: 12px; }
 
 /* Contact */
-.contact .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.contact .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
 .contact .contact-card { border: 1px solid var(--border); background: var(--bg-elev); border-radius: 12px; padding: 16px; }
 .contact .contact-card ul a { display: inline-flex; align-items: center; gap: 8px; }
 .contact label { display: grid; gap: 6px; margin-bottom: 10px; }
