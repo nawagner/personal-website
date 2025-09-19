@@ -18,13 +18,13 @@
     "image": "assets/img/cyber-ai-presentation.png"
   },
   {
-    "title": "API Service",
-    "description": "A lightweight REST API with auth and rate limiting.",
-    "tech": ["Node.js", "Express", "Postgres"],
-    "tags": ["backend", "api"],
-    "repoUrl": "https://github.com/nawagner/api-service",
-    "liveUrl": "",
-    "image": "assets/img/project-cover-2.jpg"
+    "title": "Witness Witness",
+    "description": "Interactive tool for exploring Congressional hearing witness records. Built for the 2025 Congressional Hackathon with Nick Ashworth and OpenAI Codex.",
+    "tech": ["JavaScript", "D3.js", "HTML", "CSS"],
+    "tags": ["frontend", "data", "government"],
+    "repoUrl": "https://github.com/nawagner/Congressional-Hackathon-2025/tree/main/witnessWitness",
+    "liveUrl": "https://nawagner.github.io/Congressional-Hackathon-2025/",
+    "image": "assets/img/witness-witness.png"
   },
   {
     "title": "Cloud Cost Dashboard",
