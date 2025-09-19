@@ -20,19 +20,28 @@
   {
     "title": "Witness Witness",
     "description": "Interactive tool for exploring Congressional hearing witness records. Built for the 2025 Congressional Hackathon with Nick Ashworth and OpenAI Codex.",
-    "tech": ["JavaScript", "D3.js", "HTML", "CSS"],
+    "tech": ["JavaScript", "HTML", "CSS"],
     "tags": ["frontend", "data", "government"],
     "repoUrl": "https://github.com/nawagner/Congressional-Hackathon-2025/tree/main/witnessWitness",
     "liveUrl": "https://nawagner.github.io/Congressional-Hackathon-2025/",
     "image": "assets/img/witness-witness.png"
   },
   {
-    "title": "Cloud Cost Dashboard",
-    "description": "Interactive dashboard to visualize cloud spend trends.",
-    "tech": ["TypeScript", "React", "D3"],
-    "tags": ["frontend", "data"],
-    "repoUrl": "https://github.com/nawagner/cloud-cost-dashboard",
-    "liveUrl": "https://dashboard.example.com",
-    "image": "assets/img/project-cover-3.jpg"
+    "title": "BASIS",
+    "description": "Autonomous research assistant for end-to-end DFT calculations in materials science. I developed the literature search and reading agent that mines scientific papers to inform simulation planning. Multi-agent system built with team.",
+    "tech": ["Python", "LangGraph", "LLMs", "Quantum ESPRESSO", "SLURM"],
+    "tags": ["ai", "materials", "research"],
+    "repoUrl": "",
+    "liveUrl": "https://github.com/abir0/dft-agent",
+    "image": "assets/img/basis.png"
+  },
+  {
+    "title": "AI Reading List for Policy People",
+    "description": "Curated collection of AI resources for policymakers and government professionals working at the intersection of artificial intelligence and public policy.",
+    "tech": ["Reading", "Policy"],
+    "tags": ["ai", "policy", "education"],
+    "repoUrl": "",
+    "liveUrl": "https://github.com/nawagner/AI-reading-list-for-policy-people",
+    "image": "assets/img/ai-reading-list.png"
   }
 ]
