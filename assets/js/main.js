@@ -33,18 +33,19 @@ async function loadProjects({ mountId, limit }) {
 function cardHTML(p) {
   const img = p.image || 'assets/img/profile.jpg';
   const tech = (p.tech || []).slice(0, 5).map(t => `<li>${escapeHTML(t)}</li>`).join('');
-  const links = [
-    p.liveUrl ? `<a class="button primary" href="${escapeAttr(p.liveUrl)}" target="_blank" rel="noopener">Live</a>` : '',
-    p.repoUrl ? `<a class="button" href="${escapeAttr(p.repoUrl)}" target="_blank" rel="noopener">Code</a>` : ''
-  ].join('');
+  const primaryUrl = p.liveUrl || p.repoUrl;
+  const imageContent = `<img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
+  const wrappedImage = primaryUrl ?
+    `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>` :
+    imageContent;
+
   return `
   <article class="card">
-    <img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />
+    ${wrappedImage}
     <div class="card-body">
       <h3>${escapeHTML(p.title || 'Untitled')}</h3>
       <p class="desc">${escapeHTML(p.description || '')}</p>
       <ul class="pill-list">${tech}</ul>
-      <div class="card-actions">${links}</div>
     </div>
   </article>`;
 }

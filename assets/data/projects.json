@@ -5,8 +5,17 @@
     "tech": ["AI/ML", "Python", "React", "Node.js"],
     "tags": ["ai", "education", "startup"],
     "repoUrl": "",
-    "liveUrl": "https://learningjourneyai.com",
-    "image": "assets/img/project-cover-1.jpg"
+    "liveUrl": "https://www.learningjourneyai.com/",
+    "image": "assets/img/gemini-learning-journey-ai-logo.png"
+  },
+  {
+    "title": "AI and Cybersecurity Presentation",
+    "description": "Presentation for Basha High School students exploring the intersection of artificial intelligence and cybersecurity, covering threats, opportunities, and practical ways to get started with AI.",
+    "tech": ["AI/ML", "Cybersecurity", "Policy"],
+    "tags": ["ai", "security", "presentation"],
+    "repoUrl": "",
+    "liveUrl": "https://docs.google.com/presentation/d/1lBJJY_qKem-UjQC_uFH6Gj_vgobT4T8p7WzON87zrts/edit?slide=id.p#slide=id.p",
+    "image": "assets/img/cyber-ai-presentation.png"
   },
   {
     "title": "API Service",
