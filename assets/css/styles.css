@@ -82,11 +82,6 @@ a:hover { text-decoration: underline; }
 .tag { border: 1px solid var(--border); background: transparent; color: var(--text); padding: 6px 10px; border-radius: 999px; cursor: pointer; }
 .tag.active { background: var(--primary); color: white; border-color: transparent; }
 
-/* About */
-.about .about-card { display: grid; grid-template-columns: 220px 1fr; gap: 24px; border: 1px solid var(--border); background: var(--bg-elev); border-radius: 14px; padding: 18px; }
-.about .about-img { width: 220px; height: 220px; object-fit: cover; border-radius: 14px; border: 1px solid var(--border); }
-.about .skills { margin-top: 10px; }
-.about .about-cta { margin-top: 18px; display: flex; gap: 12px; }
 
 /* Contact */
 .contact .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
@@ -116,7 +111,6 @@ a:hover { text-decoration: underline; }
   .hero { grid-template-columns: 1fr; }
   .hero-img { justify-self: start; width: 140px; height: 140px; }
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .about .about-card { grid-template-columns: 1fr; }
   .contact .contact-grid { grid-template-columns: 1fr; }
 }
 
