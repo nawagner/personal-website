@@ -1,5 +1,13 @@
 [
   {
+    "title": "Staying Relevant in a Changing Analytics World",
+    "description": "Career retrospective talk for Dr. Kanad Basu's Data Mining for Business Analytics class at GMU, focusing on why soft skills matter more than ever as AI capabilities are evolving rapidly.",
+    "topics": ["Analytics", "Career", "AI"],
+    "tags": ["analytics", "career", "ai"],
+    "slidesUrl": "https://docs.google.com/presentation/d/1Xylm_Z6cXs6BEaXzpSkUkbP5HwJNOOZH0_m5IyWFmAA/edit?slide=id.p#slide=id.p",
+    "image": "assets/img/1759288329856.jpeg"
+  },
+  {
     "title": "AI and Cybersecurity Presentation",
     "description": "Presentation for Basha High School students exploring the intersection of artificial intelligence and cybersecurity, covering threats, opportunities, and practical ways to get started with AI.",
     "topics": ["AI/ML", "Cybersecurity", "Policy"],
