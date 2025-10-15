@@ -1,5 +1,14 @@
 [
   {
+    "title": "Proposal Utility Suite",
+    "description": "Analyze proposal concept outlines with AI models to compare submissions against rubrics, generate synthetic data, and tag proposals automatically. Work in progress! :)",
+    "tech": ["AI/ML", "Next.js", "TypeScript"],
+    "tags": ["ai", "government", "productivity"],
+    "repoUrl": "",
+    "liveUrl": "https://proposal-utility-suite.vercel.app/",
+    "image": "assets/img/proposal_utility_suite.png"
+  },
+  {
     "title": "Learning Journey AI",
     "description": "AI-powered learning platform that provides job-relevant project-based education modules.",
     "tech": ["AI/ML", "Python", "React", "Node.js"],
