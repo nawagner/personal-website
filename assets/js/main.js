@@ -35,15 +35,19 @@ function cardHTML(p) {
   const techList = p.tech || p.topics || [];
   const tech = techList.slice(0, 5).map(t => `<li>${escapeHTML(t)}</li>`).join('');
   const primaryUrl = p.liveUrl || p.repoUrl || p.slidesUrl;
+  const classes = ['card'];
+  if (p.highlighted) classes.push('card--highlighted');
+  const badge = p.highlighted ? `<span class="card-badge">Spotlight</span>` : '';
   const imageContent = `<img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
   const wrappedImage = primaryUrl ?
     `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>` :
     imageContent;
 
   return `
-  <article class="card">
+  <article class="${classes.join(' ')}">
     ${wrappedImage}
     <div class="card-body">
+      ${badge}
       <h3>${escapeHTML(p.title || 'Untitled')}</h3>
       <p class="desc">${escapeHTML(p.description || '')}</p>
       <ul class="pill-list">${tech}</ul>

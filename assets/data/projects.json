@@ -1,5 +1,15 @@
 [
   {
+    "title": "Learning Journey AI",
+    "description": "AI-powered learning platform that provides job-relevant project-based education modules.",
+    "tech": ["AI/ML", "Python", "React", "Node.js"],
+    "tags": ["ai", "education", "startup"],
+    "repoUrl": "",
+    "liveUrl": "https://www.learningjourneyai.com/",
+    "image": "assets/img/gemini-learning-journey-ai-logo.png",
+    "highlighted": true
+  },
+  {
     "title": "Proposal Utility Suite",
     "description": "Analyze proposal concept outlines with AI models to compare submissions against rubrics, generate synthetic data, and tag proposals automatically. Work in progress! :)",
     "tech": ["AI/ML", "Next.js", "TypeScript"],
@@ -7,15 +17,6 @@
     "repoUrl": "",
     "liveUrl": "https://proposal-utility-suite.vercel.app/",
     "image": "assets/img/proposal_utility_suite.png"
-  },
-  {
-    "title": "Learning Journey AI",
-    "description": "AI-powered learning platform that provides job-relevant project-based education modules.",
-    "tech": ["AI/ML", "Python", "React", "Node.js"],
-    "tags": ["ai", "education", "startup"],
-    "repoUrl": "",
-    "liveUrl": "https://www.learningjourneyai.com/",
-    "image": "assets/img/gemini-learning-journey-ai-logo.png"
   },
   {
     "title": "Witness Witness",

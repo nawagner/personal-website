@@ -67,6 +67,9 @@ a:hover { text-decoration: underline; }
 /* Cards */
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .card { border: 1px solid var(--border); background: var(--bg-elev); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+.card--highlighted { border-color: var(--primary); box-shadow: 0 12px 26px rgba(23, 37, 84, 0.3); transform: translateY(-2px); }
+.card--highlighted .card-body { background: rgba(99, 179, 237, 0.08); }
+.card-badge { align-self: flex-start; background: var(--primary); color: var(--primary-contrast); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 10px; border-radius: 999px; }
 .card img { width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid var(--border); }
 .card img[src*="learning-journey-ai-logo"] { object-fit: contain; padding: 20px; background: white; }
 .card-body { padding: 14px; display: flex; gap: 12px; flex-direction: column; }
