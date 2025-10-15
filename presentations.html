@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects — Nick Wagner</title>
-    <meta name="description" content="Projects by Nick Wagner: case studies, code, and live demos." />
-    <meta property="og:title" content="Projects — Nick Wagner" />
-    <meta property="og:description" content="Case studies, repositories, and live demos." />
+    <title>Presentations — Nick Wagner</title>
+    <meta name="description" content="Talks and presentations by Nick Wagner on AI, policy, and technology." />
+    <meta property="og:title" content="Presentations — Nick Wagner" />
+    <meta property="og:description" content="Slide decks and recordings from public talks and workshops." />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/main.js"></script>
-    <script defer src="assets/js/projects.js"></script>
+    <script defer src="assets/js/presentations.js"></script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="./">Nick Wagner</a>
         <nav class="nav">
-          <a href="projects.html" aria-current="page">Projects</a>
-          <a href="presentations.html">Presentations</a>
+          <a href="projects.html">Projects</a>
+          <a href="presentations.html" aria-current="page">Presentations</a>
           <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
         <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
@@ -26,15 +26,15 @@
     </header>
 
     <main class="container section">
-      <h1>Projects</h1>
-      <p class="lede">A selection of things I’ve designed and built.</p>
+      <h1>Presentations</h1>
+      <p class="lede">Talks, workshops, and presentations on AI, policy, and technology.</p>
 
       <div class="filters">
-        <input id="search" type="search" placeholder="Search projects..." aria-label="Search projects" />
-        <div id="tagFilters" class="tag-filters" role="group" aria-label="Filter by tag"></div>
+        <input id="presentationSearch" type="search" placeholder="Search presentations..." aria-label="Search presentations" />
+        <div id="presentationTagFilters" class="tag-filters" role="group" aria-label="Filter by tag"></div>
       </div>
 
-      <div id="projectsGrid" class="card-grid"></div>
+      <div id="presentationsGrid" class="card-grid"></div>
     </main>
 
     <footer class="site-footer">
@@ -51,8 +51,8 @@
       document.addEventListener('DOMContentLoaded', () => {
         const year = document.getElementById('year');
         if (year) year.textContent = new Date().getFullYear();
-        initProjectsPage();
+        initPresentationsPage();
       });
     </script>
   </body>
-  </html>
+</html>

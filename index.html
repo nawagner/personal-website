@@ -20,6 +20,7 @@
         <a class="brand" href="./">Nick Wagner</a>
         <nav class="nav">
           <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
           <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
         <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
@@ -81,6 +82,14 @@
         </div>
         <div id="featuredProjects" class="card-grid"></div>
       </section>
+
+      <section class="container section">
+        <div class="section-header">
+          <h2>Presentations</h2>
+          <a class="link" href="presentations.html">See all</a>
+        </div>
+        <div id="featuredPresentations" class="card-grid"></div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -88,6 +97,7 @@
         <span>© <span id="year"></span> Nick Wagner</span>
         <div class="footer-links">
           <a href="projects.html">Projects</a>
+          <a href="presentations.html">Presentations</a>
         </div>
       </div>
     </footer>
@@ -98,6 +108,7 @@
         if (year) year.textContent = new Date().getFullYear();
         // Load featured projects (top 3)
         loadProjects({ mountId: 'featuredProjects', limit: 3 });
+        loadProjects({ mountId: 'featuredPresentations', limit: 3, source: 'assets/data/presentations.json' });
       });
     </script>
 

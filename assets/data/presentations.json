@@ -1,0 +1,10 @@
+[
+  {
+    "title": "AI and Cybersecurity Presentation",
+    "description": "Presentation for Basha High School students exploring the intersection of artificial intelligence and cybersecurity, covering threats, opportunities, and practical ways to get started with AI.",
+    "topics": ["AI/ML", "Cybersecurity", "Policy"],
+    "tags": ["ai", "security", "education"],
+    "slidesUrl": "https://docs.google.com/presentation/d/1lBJJY_qKem-UjQC_uFH6Gj_vgobT4T8p7WzON87zrts/edit?slide=id.p#slide=id.p",
+    "image": "assets/img/cyber-ai-presentation.png"
+  }
+]

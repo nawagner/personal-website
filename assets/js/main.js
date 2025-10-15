@@ -16,9 +16,9 @@
 })();
 
 // Shared project loader for homepage
-async function loadProjects({ mountId, limit }) {
+async function loadProjects({ mountId, limit, source = 'assets/data/projects.json' }) {
   try {
-    const res = await fetch('assets/data/projects.json');
+    const res = await fetch(source);
     const data = await res.json();
     const projects = Array.isArray(data) ? data : data.projects || [];
     const list = typeof limit === 'number' ? projects.slice(0, limit) : projects;
@@ -32,8 +32,9 @@ async function loadProjects({ mountId, limit }) {
 
 function cardHTML(p) {
   const img = p.image || 'assets/img/profile.jpg';
-  const tech = (p.tech || []).slice(0, 5).map(t => `<li>${escapeHTML(t)}</li>`).join('');
-  const primaryUrl = p.liveUrl || p.repoUrl;
+  const techList = p.tech || p.topics || [];
+  const tech = techList.slice(0, 5).map(t => `<li>${escapeHTML(t)}</li>`).join('');
+  const primaryUrl = p.liveUrl || p.repoUrl || p.slidesUrl;
   const imageContent = `<img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
   const wrappedImage = primaryUrl ?
     `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>` :
@@ -54,4 +55,3 @@ function escapeHTML(str) {
   return String(str).replace(/[&<>"]+/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 }
 function escapeAttr(str) { return escapeHTML(str).replace(/'/g, '&#39;'); }
-
