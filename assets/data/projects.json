@@ -1,7 +1,7 @@
 [
   {
     "title": "Learning Journey AI",
-    "description": "AI-powered personalized learning platform that adapts to individual learner needs, pace, and goals for high-quality project-based education.",
+    "description": "AI-powered learning platform that provides job relevant project-based education modules.",
     "tech": ["AI/ML", "Python", "React", "Node.js"],
     "tags": ["ai", "education", "startup"],
     "repoUrl": "",
