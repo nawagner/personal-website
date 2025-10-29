@@ -1,5 +1,13 @@
 [
   {
+    "title": "Responsible AI in Business Guest Panel",
+    "description": "Guest panelist for UW Foster School of Business AI Product Management class alongside Orlando Lugo from Salesforce. Discussed responsible AI efforts in government, AI governance approaches, and the importance of principles over hype in AI development.",
+    "topics": ["AI/ML", "Policy", "Product Management"],
+    "tags": ["responsible-ai", "policy", "product-management"],
+    "slidesUrl": "",
+    "image": "assets/img/Gemini_Generated_Image_4c7idc4c7idc4c7i.png"
+  },
+  {
     "title": "Staying Relevant in a Changing Analytics World",
     "description": "Career retrospective talk for Dr. Kanad Basu's Data Mining for Business Analytics class at GMU, focusing on why soft skills matter more than ever as AI capabilities are evolving rapidly.",
     "topics": ["Analytics", "Career", "AI"],
