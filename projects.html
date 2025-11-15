@@ -1,58 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects — Nick Wagner</title>
-    <meta name="description" content="Projects by Nick Wagner: case studies, code, and live demos." />
-    <meta property="og:title" content="Projects — Nick Wagner" />
-    <meta property="og:description" content="Case studies, repositories, and live demos." />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script defer src="assets/js/main.js"></script>
-    <script defer src="assets/js/projects.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="./">Nick Wagner</a>
-        <nav class="nav">
-          <a href="projects.html" aria-current="page">Projects</a>
-          <a href="presentations.html">Presentations</a>
-          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-        </nav>
-        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Nick Wagner</title>
+  <meta name="description" content="Selected projects designed and built by Nick Wagner." />
+  <link rel="canonical" href="https://nickwagner.info/projects.html">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme')||'');</script>
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Home">Nick Wagner</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/projects.html" aria-current="page">Projects</a></li>
+          <li><a href="/presentations.html">Presentations</a></li>
+          <li><a href="/assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">☾ Dark</button>
+    </div>
+  </header>
 
-    <main class="container section">
-      <h1>Projects</h1>
-      <p class="lede">A selection of things I’ve designed and built.</p>
+  <main id="main" class="container">
+    <section class="section">
+      <h1 style="font-size:var(--step-3); margin:.5rem 0 1rem;">Projects</h1>
+      <p class="sub">A selection of things I’ve designed and built.</p>
+      <div id="projects-grid" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
 
-      <div class="filters">
-        <input id="search" type="search" placeholder="Search projects..." aria-label="Search projects" />
-        <div id="tagFilters" class="tag-filters" role="group" aria-label="Filter by tag"></div>
-      </div>
-
-      <div id="projectsGrid" class="card-grid"></div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© <span id="year"></span> Nick Wagner</span>
-        <div class="footer-links">
-          <a href="projects.html">Projects</a>
-          <a href="presentations.html">Presentations</a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const year = document.getElementById('year');
-        if (year) year.textContent = new Date().getFullYear();
-        initProjectsPage();
-      });
-    </script>
-  </body>
-  </html>
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Nick Wagner</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

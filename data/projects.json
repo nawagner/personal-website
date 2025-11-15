@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "learning-journey-ai",
+    "title": "Learning Journey AI",
+    "year": "2025\u2014present",
+    "role": "Co\u2011founder & CEO",
+    "description": "Project\u2011based learning platform focused on workforce AI skill development. Built the early product and content strategy; coordinating pilots with practitioners.",
+    "tags": [
+      "AI literacy",
+      "Edtech",
+      "Product"
+    ],
+    "featured": true,
+    "links": []
+  },
+  {
+    "slug": "witness-witness",
+    "title": "Witness Witness",
+    "year": "2025",
+    "role": "Builder",
+    "description": "7th Congressional Hackathon demo that scraped witness lists from hearing webpages and assembled a browsable database.",
+    "tags": [
+      "GovTech",
+      "Web scraping",
+      "OpenAI"
+    ],
+    "featured": true,
+    "links": [
+      {
+        "label": "Demo",
+        "href": "https://nawagner.github.io/Congressional-Hackathon-2025/"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/nawagner/Congressional-Hackathon-2025/tree/main/witnessWitness"
+      }
+    ]
+  },
+  {
+    "slug": "materials-simulation-agent",
+    "title": "Materials Simulation Agent",
+    "year": "2025",
+    "role": "Contributor",
+    "description": "Hackathon project (BASIS) to streamline density functional theory (DFT) calculations with LLM agents; implemented the literature\u2011search components.",
+    "tags": [
+      "LLM",
+      "Scientific computing",
+      "DFT"
+    ],
+    "featured": true,
+    "links": [
+      {
+        "label": "Video",
+        "href": "https://youtu.be/fP5Z-wi7_FE"
+      },
+      {
+        "label": "Code",
+        "href": "https://github.com/abir0/dft-agent"
+      }
+    ]
+  },
+  {
+    "slug": "nsf-ai-institutes-dashboard",
+    "title": "NSF AI Institutes \u2014 overview dashboard (prototype)",
+    "year": "2024\u20132025",
+    "role": "AAAS STPF Fellow",
+    "description": "Internal prototype for summarizing portfolio and program metrics across a $540M multi\u2011year initiative. Built with Python and modern LLM tooling.",
+    "tags": [
+      "Data",
+      "Public sector",
+      "Dashboard"
+    ],
+    "featured": false,
+    "links": []
+  }
+]

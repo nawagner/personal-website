@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Witness Witness \u2014 hackathon demo",
+    "event": "7th Congressional Hackathon",
+    "date": "2025",
+    "description": "Short demonstration of a tool that collects hearing witness rosters into a single UI.",
+    "links": [
+      {
+        "label": "Demo",
+        "href": "https://nawagner.github.io/Congressional-Hackathon-2025/"
+      }
+    ]
+  },
+  {
+    "title": "AI literacy for the workforce (in progress)",
+    "event": "Learning Journey AI",
+    "date": "\u2014",
+    "description": "Draft workshop outline and materials for project\u2011based AI upskilling. Replace with link to slides when ready.",
+    "links": []
+  }
+]

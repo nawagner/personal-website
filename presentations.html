@@ -1,58 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Presentations — Nick Wagner</title>
-    <meta name="description" content="Talks and presentations by Nick Wagner on AI, policy, and technology." />
-    <meta property="og:title" content="Presentations — Nick Wagner" />
-    <meta property="og:description" content="Slide decks and recordings from public talks and workshops." />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script defer src="assets/js/main.js"></script>
-    <script defer src="assets/js/presentations.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="./">Nick Wagner</a>
-        <nav class="nav">
-          <a href="projects.html">Projects</a>
-          <a href="presentations.html" aria-current="page">Presentations</a>
-          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-        </nav>
-        <button class="theme-toggle" aria-label="Toggle dark mode" id="themeToggle">☾</button>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presentations — Nick Wagner</title>
+  <meta name="description" content="Talks, workshops, and presentations by Nick Wagner." />
+  <link rel="canonical" href="https://nickwagner.info/presentations.html">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme')||'');</script>
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/" aria-label="Home">Nick Wagner</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/presentations.html" aria-current="page">Presentations</a></li>
+          <li><a href="/assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">☾ Dark</button>
+    </div>
+  </header>
 
-    <main class="container section">
-      <h1>Presentations</h1>
-      <p class="lede">Talks, workshops, and presentations on AI, policy, and technology.</p>
+  <main id="main" class="container">
+    <section class="section">
+      <h1 style="font-size:var(--step-3); margin:.5rem 0 1rem;">Presentations</h1>
+      <p class="sub">Talks, workshops, and demos on AI, policy, and technology.</p>
+      <div id="presentations-grid" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
 
-      <div class="filters">
-        <input id="presentationSearch" type="search" placeholder="Search presentations..." aria-label="Search presentations" />
-        <div id="presentationTagFilters" class="tag-filters" role="group" aria-label="Filter by tag"></div>
-      </div>
-
-      <div id="presentationsGrid" class="card-grid"></div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© <span id="year"></span> Nick Wagner</span>
-        <div class="footer-links">
-          <a href="projects.html">Projects</a>
-          <a href="presentations.html">Presentations</a>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const year = document.getElementById('year');
-        if (year) year.textContent = new Date().getFullYear();
-        initPresentationsPage();
-      });
-    </script>
-  </body>
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Nick Wagner</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
 </html>
