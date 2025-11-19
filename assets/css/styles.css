@@ -172,7 +172,14 @@ button,
 .button:hover { text-decoration: none; }
 .button.primary { background: var(--primary); color: #050c1a; border-color: transparent; }
 .button.secondary { background: transparent; color: var(--text); }
-.button.primary:hover { transform: translateY(-1px); }
+.button.primary:hover,
+.button.secondary:hover {
+  transform: translateY(-1px);
+}
+.button.secondary:hover {
+  background: var(--bg-elev);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
 
 .emoji-burst {
   position: fixed;
