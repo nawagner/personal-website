@@ -38,10 +38,10 @@ function cardHTML(p) {
   const classes = ['card'];
   if (p.highlighted) classes.push('card--highlighted');
   const badge = p.highlighted ? `<span class="card-badge">Spotlight</span>` : '';
-  const imageContent = `<img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
-  const wrappedImage = primaryUrl ?
-    `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>` :
-    imageContent;
+  const imageContent = `<img loading="lazy" src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
+  const wrappedImage = primaryUrl
+    ? `<a class="card-media" href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>`
+    : `<div class="card-media">${imageContent}</div>`;
 
   return `
   <article class="${classes.join(' ')}">
