@@ -8,9 +8,12 @@
     <meta property="og:title" content="Nick Wagner — Portfolio" />
     <meta property="og:description" content="Projects, experience, and contact information." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com/" />
-    <meta property="og:image" content="assets/img/profile.jpg" />
+    <meta property="og:url" content="https://nickwagner.info/" />
+    <meta property="og:image" content="assets/img/og-card.svg" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
@@ -28,12 +31,17 @@
     </header>
 
     <main>
-      <section class="hero container">
+      <section class="hero container" id="hero" aria-labelledby="intro-heading">
         <div class="hero-text">
-          <h1>Hi, I’m Nick Wagner</h1>
+          <p class="hero-eyebrow">AI × Government Policy</p>
+          <h1 id="intro-heading">Hi, I’m Nick Wagner</h1>
           <p class="lede">
              I have ten years of experiencing working at the intersection of AI and government policy. Right now I am focused on building an online platform for promoting workforce AI literacy, but I have previously worked in science funding, national security, and  materials research. In my spare time, I like to plan and attend various tech policy meetups and hackathons in DC. 
           </p>
+          <div class="hero-cta">
+            <a class="button primary" href="mailto:nwagner@learningjourneyai.com">Get in touch</a>
+            <button class="button secondary" type="button" id="happyButton">Happy Time</button>
+          </div>
           <div class="socials">
             <a href="https://github.com/nawagner" aria-label="GitHub">
               <span class="icon" aria-hidden="true">
@@ -72,7 +80,11 @@
             </a>
           </div>
         </div>
-        <img class="hero-img" src="assets/img/profile.jpg" alt="Portrait of Nick Wagner" />
+        <div class="hero-media">
+          <div class="hero-portrait">
+            <img class="hero-img" src="assets/img/profile.jpg" alt="Portrait of Nick Wagner" />
+          </div>
+        </div>
       </section>
 
       <section class="container section">
@@ -117,7 +129,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Nicholas (Nick) Wagner",
-        "url": "https://example.com/",
+        "url": "https://nickwagner.info/",
         "sameAs": [
           "https://github.com/nawagner",
           "https://www.linkedin.com/in/wagnernicholas",

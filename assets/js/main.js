@@ -38,10 +38,10 @@ function cardHTML(p) {
   const classes = ['card'];
   if (p.highlighted) classes.push('card--highlighted');
   const badge = p.highlighted ? `<span class="card-badge">Spotlight</span>` : '';
-  const imageContent = `<img src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
-  const wrappedImage = primaryUrl ?
-    `<a href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>` :
-    imageContent;
+  const imageContent = `<img loading="lazy" src="${escapeAttr(img)}" alt="${escapeAttr(p.title || 'Project image')}" />`;
+  const wrappedImage = primaryUrl
+    ? `<a class="card-media" href="${escapeAttr(primaryUrl)}" target="_blank" rel="noopener">${imageContent}</a>`
+    : `<div class="card-media">${imageContent}</div>`;
 
   return `
   <article class="${classes.join(' ')}">
@@ -59,3 +59,34 @@ function escapeHTML(str) {
   return String(str).replace(/[&<>"]+/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 }
 function escapeAttr(str) { return escapeHTML(str).replace(/'/g, '&#39;'); }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const happyBtn = document.getElementById('happyButton');
+  if (happyBtn) {
+    happyBtn.addEventListener('click', () => triggerHappyTimes(happyBtn));
+  }
+});
+
+function triggerHappyTimes(button) {
+  const rect = button.getBoundingClientRect();
+  const emojis = ['😊', '😄', '😎', '🤩', '😁'];
+  const burstCount = 24;
+
+  for (let i = 0; i < burstCount; i++) {
+    const emoji = document.createElement('span');
+    emoji.className = 'emoji-burst';
+    emoji.textContent = emojis[i % emojis.length];
+
+    const angle = Math.random() * Math.PI * 2;
+    const distance = 80 + Math.random() * 90;
+    emoji.style.left = `${rect.left + rect.width / 2}px`;
+    emoji.style.top = `${rect.top + rect.height / 2}px`;
+    emoji.style.fontSize = `${22 + Math.random() * 10}px`;
+    emoji.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
+    emoji.style.setProperty('--dy', `${Math.sin(angle) * distance - 40}px`);
+    emoji.style.setProperty('--spin', `${Math.random() * 720 - 360}deg`);
+
+    document.body.appendChild(emoji);
+    setTimeout(() => emoji.remove(), 1200);
+  }
+}
