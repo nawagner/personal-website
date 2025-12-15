@@ -10,6 +10,15 @@
     "highlighted": true
   },
   {
+    "title": "Booklingly",
+    "description": "AI-powered language learning tool that generates customizable illustrated scenes with labeled objects in 21 languages, complete with IPA pronunciation guides.",
+    "tech": ["AI/ML", "Image Generation"],
+    "tags": ["ai", "education", "languages"],
+    "repoUrl": "",
+    "liveUrl": "https://booklingly.com/",
+    "image": "assets/img/booklingly.jpeg"
+  },
+  {
     "title": "Proposal Utility Suite",
     "description": "Analyze proposal concept outlines with AI models to compare submissions against rubrics, generate synthetic data, and tag proposals automatically. Work in progress! :)",
     "tech": ["AI/ML", "Next.js", "TypeScript"],
