@@ -19,13 +19,13 @@
     "image": "assets/img/booklingly.jpeg"
   },
   {
-    "title": "Proposal Utility Suite",
-    "description": "Analyze proposal concept outlines with AI models to compare submissions against rubrics, generate synthetic data, and tag proposals automatically. Work in progress! :)",
-    "tech": ["AI/ML", "Next.js", "TypeScript"],
-    "tags": ["ai", "government", "productivity"],
-    "repoUrl": "",
-    "liveUrl": "https://proposal-utility-suite.vercel.app/",
-    "image": "assets/img/proposal_utility_suite.png"
+    "title": "Fool 'Em Once",
+    "description": "Research study on AI text detection vulnerabilities. Found that 89% of AI-generated essays evaded detection after humanization, with detection rates dropping from 97.4% to 10.5%.",
+    "tech": ["Node.js", "Python", "AI/ML"],
+    "tags": ["ai", "research", "education"],
+    "repoUrl": "https://github.com/nawagner/fool-em-once",
+    "liveUrl": "",
+    "image": "assets/img/fool-em-once.png"
   },
   {
     "title": "Witness Witness",
@@ -53,5 +53,14 @@
     "repoUrl": "",
     "liveUrl": "https://github.com/nawagner/AI-reading-list-for-policy-people",
     "image": "assets/img/ai-reading-list.png"
+  },
+  {
+    "title": "Proposal Utility Suite",
+    "description": "Analyze proposal concept outlines with AI models to compare submissions against rubrics, generate synthetic data, and tag proposals automatically. Work in progress! :)",
+    "tech": ["AI/ML", "Next.js", "TypeScript"],
+    "tags": ["ai", "government", "productivity"],
+    "repoUrl": "",
+    "liveUrl": "https://proposal-utility-suite.vercel.app/",
+    "image": "assets/img/proposal_utility_suite.png"
   }
 ]
