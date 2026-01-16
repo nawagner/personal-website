@@ -243,6 +243,7 @@ button,
   display: block;
 }
 .card-media img[src*="learning-journey-ai-logo"] { object-fit: contain; padding: 20px; background: var(--bg-elev); }
+.card-media img[src*="fool-em-once"] { object-fit: contain; padding: 12px; background: #1a1a1a; }
 .card-body { padding: 18px; display: flex; gap: 12px; flex-direction: column; flex: 1; }
 .card h3 { margin: 0; font-size: 1.15rem; font-family: var(--font-heading); }
 .card .desc { color: var(--muted); margin: 0; }
