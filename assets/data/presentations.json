@@ -1,5 +1,13 @@
 [
   {
+    "title": "Claude Code for Data Analysis and Communication",
+    "description": "Webinar for Learning Journey AI on using Claude Code for data analysis. Covered installation, the explore-plan-execute-iterate workflow, analyzing NSF award data, producing statistics and visualizations with Python, and creating HTML dashboards to showcase results.",
+    "topics": ["Claude Code", "Data Analysis", "Python", "AI/ML"],
+    "tags": ["ai", "data-analysis", "python", "education"],
+    "slidesUrl": "https://docs.google.com/presentation/d/1zm7-rm7DVssgldGoyY0783XzESnEkTC5aK-82og2Oac/edit?slide=id.p#slide=id.p",
+    "image": "assets/img/claude-code-data-analysis.png"
+  },
+  {
     "title": "Responsible AI Product Management",
     "description": "Guest panelist for UW Foster School of Business AI Product Management class alongside Orlando Lugo of Salesforce. Discussed responsible AI efforts in government and industry, AI governance approaches, and the importance of principles over hype in AI development.",
     "topics": ["AI/ML", "Policy", "Product Management"],
