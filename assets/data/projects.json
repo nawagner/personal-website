@@ -20,7 +20,7 @@
   },
   {
     "title": "Fool 'Em Once",
-    "description": "Research study on AI text detection vulnerabilities. Found that 89% of AI-generated essays evaded detection after humanization, with detection rates dropping from 97.4% to 10.5%.",
+    "description": "Research study on AI text detection vulnerabilities. Found that 89% of AI-generated essays evaded detection after humanization, with detection rates dropping from 97.4% to 10.5%. Powered by Claude Code.",
     "tech": ["Node.js", "Python", "AI/ML"],
     "tags": ["ai", "research", "education"],
     "repoUrl": "https://github.com/nawagner/fool-em-once",
