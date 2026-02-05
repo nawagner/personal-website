@@ -10,7 +10,7 @@ function initContactPage() {
     email: 'nwagner@learningjourneyai.com',
     linkedin: 'https://www.linkedin.com/in/wagnernicholas',
     github: 'https://github.com/nawagner',
-    website: window.location.href
+    website: 'https://nickwagner.info'
   };
 
   // Save contact as vCard
