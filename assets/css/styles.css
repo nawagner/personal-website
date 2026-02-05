@@ -323,7 +323,13 @@ button,
 .contact-page h1 {
   font-family: var(--font-heading);
   font-size: 2rem;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
+}
+.contact-title {
+  color: var(--text);
+  font-size: 1rem;
+  margin: 0 0 4px;
+  font-weight: 500;
 }
 .contact-tagline {
   color: var(--muted);
