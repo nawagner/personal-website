@@ -1,7 +1,7 @@
 [
   {
     "title": "Learning Journey AI",
-    "description": "AI-powered learning platform that provides job-relevant project-based education modules.",
+    "description": "AI-powered learning platform that provides job-relevant project-based education modules. Also offers hands-on AI literacy workshops and professional training for individuals and organizations.",
     "tech": ["AI/ML", "Python", "React", "Node.js"],
     "tags": ["ai", "education", "startup"],
     "repoUrl": "",
@@ -53,6 +53,15 @@
     "repoUrl": "",
     "liveUrl": "https://github.com/nawagner/AI-reading-list-for-policy-people",
     "image": "assets/img/ai-reading-list.png"
+  },
+  {
+    "title": "Speak Up",
+    "description": "AI-powered oral exam platform that dynamically generates questions from teacher rubrics, tracks student progress with real-time struggle detection, and supports multilingual exams with text-to-speech. Prototyped at the Cursor Hackathon on January 30, 2026.",
+    "tech": ["Next.js", "FastAPI", "AI/ML", "Python"],
+    "tags": ["ai", "education", "hackathon"],
+    "repoUrl": "https://github.com/nawagner/speak-up",
+    "liveUrl": "https://speak-up-26i.pages.dev",
+    "image": "assets/img/speak-up.png"
   },
   {
     "title": "Proposal Utility Suite",
