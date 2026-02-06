@@ -10,13 +10,13 @@
     "highlighted": true
   },
   {
-    "title": "Booklingly",
-    "description": "AI-powered language learning tool that generates customizable illustrated scenes with labeled objects in 21 languages, complete with IPA pronunciation guides.",
-    "tech": ["AI/ML", "Image Generation"],
-    "tags": ["ai", "education", "languages"],
-    "repoUrl": "",
-    "liveUrl": "https://booklingly.com/",
-    "image": "assets/img/booklingly.jpeg"
+    "title": "Congress.gov MCP Server",
+    "description": "A Model Context Protocol (MCP) server providing comprehensive access to the official Congress.gov API (v3). Features 74 tools covering bills, members, committees, hearings, nominations, treaties, and more. Built with FastMCP.",
+    "tech": ["Python", "MCP", "FastMCP"],
+    "tags": ["ai", "government", "api"],
+    "repoUrl": "https://github.com/nawagner/congress-mcp",
+    "liveUrl": "",
+    "image": "assets/img/congress-mcp.png"
   },
   {
     "title": "Fool 'Em Once",
@@ -26,6 +26,15 @@
     "repoUrl": "https://github.com/nawagner/fool-em-once",
     "liveUrl": "https://nawagner.github.io/fool-em-once/",
     "image": "assets/img/fool-em-once.png"
+  },
+  {
+    "title": "Booklingly",
+    "description": "AI-powered language learning tool that generates customizable illustrated scenes with labeled objects in 21 languages, complete with IPA pronunciation guides.",
+    "tech": ["AI/ML", "Image Generation"],
+    "tags": ["ai", "education", "languages"],
+    "repoUrl": "",
+    "liveUrl": "https://booklingly.com/",
+    "image": "assets/img/booklingly.jpeg"
   },
   {
     "title": "Witness Witness",
