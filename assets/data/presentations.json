@@ -1,5 +1,13 @@
 [
   {
+    "title": "The World of AI and You",
+    "description": "Introduction to artificial intelligence for Ironwood High School students. Demystified AI as a practical tool rather than magic, covered the rapid pace of AI advancement and the uncertainty that remains, and discussed how high school students can prepare to use AI beneficially.",
+    "topics": ["AI/ML", "Education"],
+    "tags": ["ai", "education"],
+    "slidesUrl": "https://ailearningjourneyllc-my.sharepoint.com/:p:/g/personal/nwagner_learningjourneyai_com/IQD20k3nt8m5SbpQwUGpU36hARSNp_E-jxVRzOsJ6cviJ10?e=KXxjqi",
+    "image": "assets/img/world-of-ai-and-you.png"
+  },
+  {
     "title": "Claude Code for Data Analysis and Communication",
     "description": "Webinar for Learning Journey AI on using Claude Code for data analysis. Covered installation, the explore-plan-execute-iterate workflow, analyzing NSF award data, producing statistics and visualizations with Python, and creating HTML dashboards to showcase results.",
     "topics": ["Claude Code", "Data Analysis", "Python", "AI/ML"],
