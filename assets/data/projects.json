@@ -83,7 +83,7 @@
   },
   {
     "title": "Science RFIs",
-    "description": "Interactive resource tracking three federal Requests for Information on scientific funding and AI workforce development — NSF Tech Labs, OSTP Scientific Enterprise, and DOE Genesis Mission. Built for the Industrial Policy Salon.",
+    "description": "Interactive resource tracking three federal Requests for Information on scientific funding and AI workforce development — NSF Tech Labs, OSTP Scientific Enterprise, and DOE Genesis Mission. Built for the Industrial Policy Salon, with a companion NotebookLM for deeper research.",
     "tech": ["HTML", "CSS", "JavaScript"],
     "tags": ["policy", "government", "science"],
     "repoUrl": "https://github.com/nawagner/science-rfis",
