@@ -556,6 +556,105 @@ button,
   transform: scale(0.98);
 }
 
+/* Career Timeline */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  margin-top: 8px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border);
+  border-radius: 2px;
+}
+.timeline-group {
+  margin-bottom: 28px;
+}
+.timeline-group:last-child {
+  margin-bottom: 0;
+}
+.timeline-group-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0 0 16px;
+}
+.timeline-entry {
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+.timeline-marker {
+  position: absolute;
+  left: -28px;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--primary);
+  z-index: 1;
+}
+.timeline-marker--small {
+  width: 10px;
+  height: 10px;
+  left: -25px;
+  top: 20px;
+  border-width: 2px;
+  background: var(--primary);
+  opacity: 0.6;
+}
+.timeline-content {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+.timeline-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+.timeline-role {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+  color: var(--text);
+}
+.timeline-org {
+  font-size: 0.92rem;
+  color: var(--primary);
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+.timeline-desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+.timeline-desc--community {
+  font-style: italic;
+  font-size: 0.88rem;
+}
+.timeline-cta {
+  margin-top: 24px;
+  text-align: center;
+}
+
 /* Responsive - Tablet */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; text-align: left; gap: 32px; }
@@ -564,6 +663,11 @@ button,
   .hero-portrait { padding: 8px; }
   .contact .contact-grid { grid-template-columns: 1fr; }
   .contact-page { max-width: 100%; }
+  .timeline { padding-left: 24px; }
+  .timeline::before { left: 6px; }
+  .timeline-marker { left: -24px; width: 14px; height: 14px; }
+  .timeline-marker--small { left: -22px; }
+  .timeline-group-title { font-size: 0.95rem; }
 }
 
 /* Responsive - Mobile */
@@ -771,6 +875,44 @@ button,
   .contact-actions .button {
     width: 100%;
   }
+  .timeline {
+    padding-left: 20px;
+  }
+  .timeline::before {
+    left: 5px;
+  }
+  .timeline-marker {
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    top: 20px;
+  }
+  .timeline-marker--small {
+    left: -18px;
+    width: 8px;
+    height: 8px;
+  }
+  .timeline-group-title {
+    font-size: 0.88rem;
+    margin-bottom: 12px;
+  }
+  .timeline-content {
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+  .timeline-role {
+    font-size: 1rem;
+  }
+  .timeline-desc {
+    font-size: 0.88rem;
+  }
+  .timeline-group {
+    margin-bottom: 22px;
+  }
+  .timeline-entry {
+    margin-bottom: 14px;
+  }
 }
 
 /* Small phones */
@@ -790,6 +932,28 @@ button,
   }
   .socials a {
     padding: 8px;
+  }
+  .timeline {
+    padding-left: 18px;
+  }
+  .timeline::before {
+    left: 4px;
+  }
+  .timeline-marker {
+    left: -18px;
+    width: 10px;
+    height: 10px;
+  }
+  .timeline-marker--small {
+    left: -17px;
+    width: 8px;
+    height: 8px;
+  }
+  .timeline-group-title {
+    font-size: 0.82rem;
+  }
+  .timeline-content {
+    padding: 10px 12px;
   }
 }
 
