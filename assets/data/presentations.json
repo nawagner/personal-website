@@ -1,5 +1,13 @@
 [
   {
+    "title": "How I Built a Congress.gov MCP Server",
+    "description": "Talk at Data Engineers DC on building an open-source Model Context Protocol (MCP) server that gives AI assistants comprehensive access to the Congress.gov API. Covered the development journey using Claude Code and FastMCP, the server's 85 tools and 8 resources spanning bills, hearings, committees, votes, and CRS reports, and how hosting on Prefect Horizon makes legislative data accessible to policy researchers, journalists, and civics educators.",
+    "topics": ["MCP", "AI/ML", "Python", "Open Source"],
+    "tags": ["ai", "mcp", "python", "open-source", "government"],
+    "slidesUrl": "https://docs.google.com/presentation/d/1ICBEQIQuTfAUezhQUBa0OllUoSj0iY65/edit?usp=sharing&ouid=102965764536844026250&rtpof=true&sd=true",
+    "image": "assets/img/congress-mcp-server-talk.png"
+  },
+  {
     "title": "Claude Code for Data Analysis and Communication",
     "description": "Webinar for Learning Journey AI on using Claude Code for data analysis. Covered installation, the explore-plan-execute-iterate workflow, analyzing NSF award data, producing statistics and visualizations with Python, and creating HTML dashboards to showcase results.",
     "topics": ["Claude Code", "Data Analysis", "Python", "AI/ML"],
