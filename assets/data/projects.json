@@ -19,6 +19,24 @@
     "image": "assets/img/congress-mcp.png"
   },
   {
+    "title": "Booklingly",
+    "description": "AI-powered language learning tool that generates personalized illustrated storybooks with labeled objects in 21 languages, complete with IPA pronunciation guides.",
+    "tech": ["AI/ML", "Image Generation"],
+    "tags": ["ai", "education", "languages"],
+    "repoUrl": "",
+    "liveUrl": "https://booklingly.com/",
+    "image": "assets/img/booklingly.jpeg"
+  },
+  {
+    "title": "Congress Calendar",
+    "description": "Subscribable iCal calendar feed for U.S. Congress committee meetings. Select chambers and committees through a web interface, then subscribe directly in your favorite calendar app with a single click.",
+    "tech": ["Python", "FastAPI"],
+    "tags": ["government", "api"],
+    "repoUrl": "https://github.com/nawagner/congress-calendar",
+    "liveUrl": "https://congress-calendar-production.up.railway.app/",
+    "image": "assets/img/congress-calendar.png"
+  },
+  {
     "title": "Fool 'Em Once",
     "description": "Research study on AI text detection vulnerabilities. Found that 89% of AI-generated essays evaded detection after humanization, with detection rates dropping from 97.4% to 10.5%. Powered by Claude Code.",
     "tech": ["Node.js", "Python", "AI/ML"],
@@ -26,15 +44,6 @@
     "repoUrl": "https://github.com/nawagner/fool-em-once",
     "liveUrl": "https://nawagner.github.io/fool-em-once/",
     "image": "assets/img/fool-em-once.png"
-  },
-  {
-    "title": "Booklingly",
-    "description": "AI-powered language learning tool that generates customizable illustrated scenes with labeled objects in 21 languages, complete with IPA pronunciation guides.",
-    "tech": ["AI/ML", "Image Generation"],
-    "tags": ["ai", "education", "languages"],
-    "repoUrl": "",
-    "liveUrl": "https://booklingly.com/",
-    "image": "assets/img/booklingly.jpeg"
   },
   {
     "title": "Witness Witness",
