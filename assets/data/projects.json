@@ -91,6 +91,15 @@
     "image": "assets/img/proposal_utility_suite.png"
   },
   {
+    "title": "Hill Jobs",
+    "description": "Job board aggregating open positions across the Senate, House, Capitol Police, Library of Congress, and Architect of the Capitol. Filter by category, organization, member, party, state, committee, and salary.",
+    "tech": ["Cloudflare Workers", "JavaScript", "HTML", "CSS"],
+    "tags": ["government", "careers"],
+    "repoUrl": "",
+    "liveUrl": "https://hill-jobs.org/",
+    "image": "assets/img/hill-jobs.png"
+  },
+  {
     "title": "Science RFIs",
     "description": "Interactive resource tracking three federal Requests for Information on scientific funding and AI workforce development — NSF Tech Labs, OSTP Scientific Enterprise, and DOE Genesis Mission. Built for the Industrial Policy Salon, with a companion NotebookLM for deeper research.",
     "tech": ["HTML", "CSS", "JavaScript"],
