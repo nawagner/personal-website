@@ -38,6 +38,24 @@ END:VCARD`;
     });
   }
 
+  // Track LinkedIn clicks
+  const linkedinLink = document.getElementById('linkedinLink');
+  if (linkedinLink) {
+    linkedinLink.addEventListener('click', () => {
+      const payload = JSON.stringify({ source: 'linkedin_contact_page' });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/track-click', new Blob([payload], { type: 'application/json' }));
+      } else {
+        fetch('/api/track-click', {
+          method: 'POST',
+          body: payload,
+          headers: { 'Content-Type': 'application/json' },
+          keepalive: true
+        }).catch(() => {});
+      }
+    });
+  }
+
   // Copy link to clipboard
   if (copyLinkBtn && copyLinkText) {
     copyLinkBtn.addEventListener('click', async () => {
