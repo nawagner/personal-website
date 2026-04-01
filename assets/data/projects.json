@@ -100,6 +100,15 @@
     "image": "assets/img/hill-jobs.png"
   },
   {
+    "title": "LinkedIn Network Dashboard",
+    "description": "Interactive dashboard for analyzing your LinkedIn network. Visualizes 1,100+ connections across industries, seniority levels, organization types, and growth over time with searchable directory and detailed breakdowns.",
+    "tech": ["Preact", "TypeScript", "ECharts", "Tailwind CSS"],
+    "tags": ["data", "frontend"],
+    "repoUrl": "https://github.com/nawagner/linkedin-dashboard",
+    "liveUrl": "https://linkedin-network-dashboard.pages.dev/",
+    "image": "assets/img/linkedin-network-dashboard.png"
+  },
+  {
     "title": "Science RFIs",
     "description": "Interactive resource tracking three federal Requests for Information on scientific funding and AI workforce development — NSF Tech Labs, OSTP Scientific Enterprise, and DOE Genesis Mission. Built for the Industrial Policy Salon, with a companion NotebookLM for deeper research.",
     "tech": ["HTML", "CSS", "JavaScript"],
