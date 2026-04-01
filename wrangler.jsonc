@@ -1,7 +1,9 @@
 {
   "name": "personal-website",
   "compatibility_date": "2025-09-19",
+  "main": "worker.js",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "binding": "ASSETS"
   }
 }
