@@ -10,6 +10,15 @@
     "highlighted": true
   },
   {
+    "title": "DC AI Guide",
+    "description": "Community resource portal connecting people in Washington, DC with AI policy, governance, and civic tech opportunities. Features curated learning resources, an event calendar, fellowship listings, and a directory of local meetups and organizations.",
+    "tech": ["Next.js", "React"],
+    "tags": ["ai", "policy", "community"],
+    "repoUrl": "",
+    "liveUrl": "https://dcai.guide/",
+    "image": "assets/img/dcai-guide.png"
+  },
+  {
     "title": "Congress.gov MCP Server",
     "description": "A Model Context Protocol (MCP) server providing comprehensive access to the official Congress.gov API (v3). Features 85 tools and 8 resources covering bills, members, committees, hearings, nominations, treaties, and more. Built with FastMCP.",
     "tech": ["Python", "MCP", "FastMCP"],
