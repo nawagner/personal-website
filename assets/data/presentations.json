@@ -1,5 +1,13 @@
 [
   {
+    "title": "Strategic Planning with AI Tools",
+    "description": "Led the first session in a three-part AI training series organized by the U.S. Embassy Dakar's Regional English and Public Services (REPS) office for American Spaces operators across West Africa. Participants joined from Senegal, The Gambia, Guinea-Bissau, Cabo Verde, Guinea, Chad, Burkina Faso, Niger, Mali, and Mauritania. The two-hour, hands-on workshop showed operators how to use ChatGPT and NotebookLM to accelerate every section of their annual American Spaces Strategic Plan — from country situation analysis and SWOT, through SMART goal-setting and target audience personas, to budget justifications grounded in local cost-of-living data. Delivered bilingually (English instruction with French Q&A and captions) and organized by Ana Barbosa (REPS Dakar) and Khadidja Sall (Director, American Center Dakar).",
+    "topics": ["AI/ML", "Strategic Planning", "International Development"],
+    "tags": ["ai", "training", "international", "government", "education"],
+    "slidesUrl": "",
+    "image": "assets/img/strategic-planning-ai-west-africa.png"
+  },
+  {
     "title": "How I Built a Congress.gov MCP Server",
     "description": "Talk at Data Engineers DC on building an open-source Model Context Protocol (MCP) server that gives AI assistants comprehensive access to the Congress.gov API. Covered the development journey using Claude Code and FastMCP, the server's 85 tools and 8 resources spanning bills, hearings, committees, votes, and CRS reports, and how hosting on Prefect Horizon makes legislative data accessible to policy researchers, journalists, and civics educators.",
     "topics": ["MCP", "AI/ML", "Python", "Open Source"],
